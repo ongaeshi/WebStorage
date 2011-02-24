@@ -47,7 +47,11 @@ var WebStorage = (function() {
     clearNotify: function(url) {
       if (confirm("記録をクリアします、よろしいですか？")) {
         WebStorage.clear();
-        location.replace(url);
+
+        if (url)
+          location.replace(url);
+	else
+          location.replace(key());
       }
     },
 
