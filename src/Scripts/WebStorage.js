@@ -8,7 +8,7 @@ var WebStorage = (function() {
   function key() {
     return document.location.pathname;
   }
-
+  
   function get(name) {
     if (!name)
       name = key();

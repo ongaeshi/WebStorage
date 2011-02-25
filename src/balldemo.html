@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Ball demo</title>
+    <script type="text/javascript" src="Scripts/MyLib.js"></script>
+    <script type="text/javascript" src="Scripts/WebStorage.js"></script>
+    <script type="text/javascript" src="Scripts/balldemo.js"></script>
+  </head>
+  <body>
+    <h1>Ball demo</h1>
+
+    <div style="position: absolute; top: 50px; left: 0px; z-index: 2; ">
+      <canvas id="canvas" width="640" height="480" onclick="onclick_canvas(event)"></canvas>
+      <div>
+	Speed :
+	<button onclick="onclick_lbutton()">&lt;&lt;</button>
+	<input id="speedmetor" size="2" onchange="onchange_text(this)"></input>
+	<button onclick="onclick_rbutton()">&gt;&gt;</button>
+      </div>
+      <button onclick="WebStorage.clearNotify()">クリア</button>
+    </div>
+  </body>
+</html>
